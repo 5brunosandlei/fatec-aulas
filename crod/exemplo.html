@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app = "MeuModulo">
+    <head lang="pt-br">
+        <meta charset="UTF-8">
+        <title>exemplo</title>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" >   
+       
+</head>
+<body>
+<div ng-controller="CtrModulo">
+    Meu nome é {{nome}}
+</div>
+    
+<script>
+	/*var CtrlLista = function($scope){
+		$scope.pessoas = [
+			{nome: "Janderson", cidade:"Porto Velho"},
+			{nome: "Felipe",cidade:"Rio Branco"},
+			{nome: "Adriana",cidade:"Humaita"},
+			{nome: "Maria Raimunda",cidade:"Manaus"}
+		];
+        
+];*/
+        
+        angular.module('MeuModulo',[])
+        .controller('CtrModulo', [ '$scope', function(s){
+            s.nome = "alisson";
+        }]);
+</script> 
+
+
+    
+
+    
+</body>    
+</html>
